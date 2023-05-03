@@ -6,6 +6,7 @@ public class ParachutePackage : MonoBehaviour
 {
     [SerializeField] private GameplayInput _input;
     [SerializeField] private Rigidbody2D _body;
+    [SerializeField] private HingeJoint2D _joint;
     private bool _controllable = true;
     public bool Activated;
     private int frames = 0;
@@ -24,6 +25,7 @@ public class ParachutePackage : MonoBehaviour
 
     private void LoseParachute()
     {
+        if (_joint != null) Destroy(_joint);
         _body.gravityScale = 1;
         _body.drag = 0;
         _controllable = false;

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66945158d92bd424d8ee8a23862a1078, type: 3}
+  m_Name: Email2
+  m_EditorClassIdentifier: 
+  From: 'From: Your New Employer'
+  Subject: 'Subject: Good work!'
+  Body: Nice job delivering that pizza. I'm sure they'll get that tower stood back
+    up soon. I've already got more work for you. Another easy one. The pharoah needs
+    a grand new tomb, and you have to drop it down in the middle of the desert. There
+    might be some moving bars in the way, just try to avoid them. You can speed up
+    and slow down by pressing left and right. When you drop the package, it will
+    follow your trajectory, so if you're holding right, the package will mostly fall
+    straight down, but if you're holding right, it will fly farther forward than
+    normal.

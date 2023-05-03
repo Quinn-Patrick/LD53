@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66945158d92bd424d8ee8a23862a1078, type: 3}
+  m_Name: Email5
+  m_EditorClassIdentifier: 
+  From: 'From: Your New Employer'
+  Subject: 'Subject: Put on your moon shoes.'
+  Body: Due to a miscalculation in the material composition of the lunar surface
+    soil, the moon base now faces a food shortage. They also built their door really
+    high up. Thankfully, they were thoughtful enough to put a big purple trampoline
+    out front. Drop the package on the trampoline, and make sure that it has enough
+    forward momentum to get inside. Good luck.

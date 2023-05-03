@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66945158d92bd424d8ee8a23862a1078, type: 3}
+  m_Name: Email7
+  m_EditorClassIdentifier: 
+  From: 'From: Your New Employer'
+  Subject: 'Subject: It''s an emergency!'
+  Body: This next one's urgent! There was an avalanche in the Swiss alps, and a skier
+    is stranded in an ice cave! We're carrying precious cargo essential for his survival.
+    This one comes with a parachute, which makes it fall slower and allows you to
+    adjust its trajectory with the arrow keys. The parachute will break off if you
+    hit anything or press the spacebar.

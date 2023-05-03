@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66945158d92bd424d8ee8a23862a1078, type: 3}
+  m_Name: Email6
+  m_EditorClassIdentifier: 
+  From: 'From: Your New Employer'
+  Subject: 'Subject: Welcome back to Earth!'
+  Body: Some old codger with a pointy hat needs us to jam something in a rock so
+    his scrawny nephew can pull it out and become king of something. His email was
+    lacking in specifics, so I just picked something that I thought would fit in
+    the hole. It's a pretty narrow target, so you may have to slow down and aim carefully.

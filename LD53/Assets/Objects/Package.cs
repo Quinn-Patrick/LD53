@@ -9,15 +9,19 @@ public class Package : MonoBehaviour
 
     public bool IsInGoal { get; private set; }
 
+    [SerializeField] private AudioClip _enterClip;
+    [SerializeField] private AudioClip _exitClip;
+    [SerializeField] private AudioSource _source;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Entered goal.");
+        _source.PlayOneShot(_enterClip);
         IsInGoal = true;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log("Exited goal.");
+        _source.PlayOneShot(_exitClip);
         Timer = 5.0f;
         IsInGoal=false;
     }

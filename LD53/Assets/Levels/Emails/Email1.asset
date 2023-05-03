@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66945158d92bd424d8ee8a23862a1078, type: 3}
+  m_Name: Email1
+  m_EditorClassIdentifier: 
+  From: 'From: Your New Employer'
+  Subject: 'Subject: Welcome to the Team!'
+  Body: 'Congratulations on your new job! If it''s alright with you, we''ll just
+    hit the ground running here with your first assignment. It''ll be an easy one:
+    deliver a pizza to Italy. Now, we''re a little behind schedule, here, so you
+    won''t have a lot of time to land and take the pizza to them. Come to think of
+    it, we''re usually behind schedule. Just drop it out of the plane with the spacebar.
+    You''ll have to get it in the marked area for it to count. If you miss, press
+    ''R'' to retry. You can also use spacebar to start the mission. Okay! Good luck!'

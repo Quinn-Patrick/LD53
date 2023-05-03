@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class Game : MonoBehaviour
 {
@@ -11,6 +12,13 @@ public class Game : MonoBehaviour
     private GameObject _currentLevel = null;
     private float _restartCooldown = 3f;
     public string GameStatus { get; private set; } = "Between";
+
+    public List<Email> Emails = new List<Email> ();
+
+    public TextMeshProUGUI fromText;
+    public TextMeshProUGUI subjectText;
+    public TextMeshProUGUI bodyText;
+    private int level = 1;
 
     private void Awake()
     {
@@ -44,15 +52,33 @@ public class Game : MonoBehaviour
     public void EndLevel()
     {
         levels.Remove(levels[0]);
+        level++;
         SceneManager.LoadScene("LevelTransition", LoadSceneMode.Single);
         GameStatus = "Between";
     }
 
     private void Update()
     {
-        _restartCooldown -= Time.deltaTime;
-        if (_input.Action && GameStatus == "Between")
+        if (GameStatus == "Between")
         {
+            if (fromText != null && bodyText != null && subjectText != null)
+            {
+                //Debug.Log("Found textmeshes.");
+                Email currentEmail = Emails[level - 1];
+                if (currentEmail != null)
+                {
+                    //Debug.Log("Setting email text.");
+                    fromText.text = currentEmail.From;
+                    subjectText.text = currentEmail.Subject;
+                    bodyText.text = currentEmail.Body;
+                }
+            }
+        }
+
+        _restartCooldown -= Time.deltaTime;
+        if (_input.Action && GameStatus == "Between" && levels.Count > 0)
+        {
+            
             Debug.Log("Attempting to advance to the next level.");
             StartLevel();
         }
